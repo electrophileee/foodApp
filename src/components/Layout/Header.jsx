@@ -2,7 +2,7 @@ import React from "react";
 import MealImage from "../../Assets/meals.jpg";
 import CartButton from "./CartButton";
 
-const Header =()=>{
+const Header =(props)=>{
     return (
         <>
         <header className=" h-[5rem] bg-[#8a2b06] ">
@@ -10,7 +10,7 @@ const Header =()=>{
             <h1 className="text-2xl text-center text-[#fff] ml-[7rem] text-[2rem]  my-3 font-bold"  >
                 DesiChaupal
             </h1>
-            <CartButton />
+            <CartButton onClick={props.onShowCart} />
             </div>
             
         </header>
